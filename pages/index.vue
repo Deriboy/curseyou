@@ -59,6 +59,9 @@ export default {
     mounted() {
         var url_hash = window.location.hash.substr(1);
         //console.log(url_hash);
+        if(url_hash == "") {
+            return;
+        }
         var idlist = url_hash.split(',');
         const options = {
             method: 'GET',

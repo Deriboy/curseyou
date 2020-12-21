@@ -16,7 +16,7 @@ function curseapi(endpoint, params, res) {
         url += (name + "=");
         url += value; 
     };
-    console.log("url: " + url);
+    //console.log("url: " + url);
     const request = httpRequest.request(url, options, (response) => {
         let responseData = '';
       
